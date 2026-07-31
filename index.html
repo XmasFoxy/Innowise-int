@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="src/css/style.css" rel="stylesheet">
+  <link href="assets/book-logo.svg" rel="icon" type="img/png" size="62x64">
+  <title>The Library</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__logo_container">
+      <img src="assets/book-logo.svg" alt="a green book logo">
+    </div>
+
+    <div class="header__text_container">
+      <div class="header__ main_container">
+        <h2>The Library</h2>
+      </div>
+
+      <div class="header__paragraph_container">
+        <p>Discover your next favorite book</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main__text_block">
+      <div class="main__header_container">
+        <h1>Discover Your Next Great Read</h1>
+      </div>
+
+      <div class="main__paragraph_container">
+        <p>Search millions of books, build your personal library, and never lose track of what to read next.</p>
+      </div>
+    </div>
+
+    <div class="main__search_block">
+      <div class="main__search_input_container">
+        <div class="main__search_input_icon">
+          <img src="assets/search.svg" alt="a loupe">
+        </div>
+
+        <div class="main__search_input">
+          <input type="text" placeholder="Search for books by title or author...">
+        </div>
+      </div>
+
+      <button class="main__search_button">Search</button>
+    </div>
+
+    <div class="main__shelf_block"></div> <!--Fill it in by JS with API-->
+
+    <div class="main__favorites_block">
+      <div class="main__favorites_head_container">
+        <div class="main__favorites_head_icon_container">
+          <img src="assets/heart-outline.svg" alt="a green heart">
+        </div>
+
+        <div class="main__favorites_head_text_container">
+          <div class="main__favorites_head_header_container">
+            <h3>Favorites</h3>
+          </div>
+
+          <div class="main__favorites_head_paragraph_container">
+            <p>Favorites</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main_favorites_shelf"></div> <!--Fill it in by JS with API-->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__text_container">
+      <p>Powered by <span>Open Library</span></p>
+    </div>
+  </footer>
+</body>
+</html>

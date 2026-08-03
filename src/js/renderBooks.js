@@ -10,6 +10,8 @@ function renderBooks(booksArr) {
     const year = document.createElement('p');
     const authorContainer = document.createElement('div');
     const author = document.createElement('p');
+    const heartContainer = document.createElement('div');
+    const heart = document.createElement('img');
 
     book.className = 'main__shelf_book';
     cover.src = item.coverURL;
@@ -24,12 +26,17 @@ function renderBooks(booksArr) {
     authorContainer.className = 'main__shelf_book_author_container';
     author.className = 'main__shelf_book_author';
     author.textContent = item.author;
+    heartContainer.className = 'main-heart-container';
+    heart.src = 'assets/heart-outline.svg';
+    heart.alt = 'a heart icon for choosing a favorite song';
+    heart.className = 'main-heart';
 
     coverContainer.append(cover);
     titleContainer.append(title);
-    yearContainer.append(year);
     authorContainer.append(author);
-    book.append(coverContainer, titleContainer, yearContainer, authorContainer);
+    yearContainer.append(year);
+    heartContainer.append(heart);
+    book.append(coverContainer, heartContainer, titleContainer, authorContainer, yearContainer);
     gridShelf.append(book);
   });
 }

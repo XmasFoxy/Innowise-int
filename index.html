@@ -14,7 +14,7 @@
     </div>
 
     <div class="header__text_container">
-      <div class="header__ main_container">
+      <div class="header__main_container">
         <h2>The Library</h2>
       </div>
 
@@ -42,34 +42,39 @@
         </div>
 
         <div class="main__search_input">
-          <input type="text" placeholder="Search for books by title or author...">
+          <input 
+          type="text" 
+          name="bookSearch"
+          placeholder="Search for books by title or author...">
         </div>
       </div>
 
       <button class="main__search_button">Search</button>
     </div>
 
-    <div class="main__shelf_block"></div> <!--Fill it in by JS with API-->
+    <div class="shelf-flex">
+      <div class="main__shelf_block"></div> <!--Fill it with data from the API-->
 
-    <div class="main__favorites_block">
-      <div class="main__favorites_head_container">
-        <div class="main__favorites_head_icon_container">
-          <img src="assets/heart-outline.svg" alt="a green heart">
-        </div>
-
-        <div class="main__favorites_head_text_container">
-          <div class="main__favorites_head_header_container">
-            <h3>Favorites</h3>
+      <div class="main__favorites_block">
+        <div class="main__favorites_head_container">
+          <div class="main__favorites_head_icon_container">
+            <img src="assets/heart-outline.svg" alt="a green heart">
           </div>
 
-          <div class="main__favorites_head_paragraph_container">
-            <p>Favorites</p>
+          <div class="main__favorites_head_text_container">
+            <div class="main__favorites_head_header_container">
+              <h3>Favorites</h3>
+            </div>
+
+            <div class="main__favorites_head_paragraph_container">
+              <p>N books saved</p>
+            </div>
           </div>
         </div>
+
+        <div class="main_favorites_shelf"></div> <!--Fill it with data from the API-->
       </div>
-
-      <div class="main_favorites_shelf"></div> <!--Fill it in by JS with API-->
-    </div>
+    </div>  
   </main>
 
   <footer class="footer">

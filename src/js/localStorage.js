@@ -25,7 +25,7 @@ export function addFavorite(book) {
 }
 
 export function removeFavorite(bookId) {
-  const favorites = getDataFromStorage();
+  let favorites = getDataFromStorage();
   favorites = favorites.filter(book => book.id !== bookId); //all books except the book with bookId
   setFavoriteBook(favorites);
 }

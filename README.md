@@ -4,7 +4,7 @@ A simple web-application for searching and saving books
 
 -----------------------------------------------------------------
 
-##Task
+## Task
 
 This project was created as a test project for **Innowise Frontend Intershi**
 
@@ -20,13 +20,13 @@ This project was created as a test project for **Innowise Frontend Intershi**
 
 -----------------------------------------------------------------
 
-##How to run the project:##
+## How to run the project:
 
-###Download:###
+### Download:
 - [Node.js](https://nodejs.org/en/download)
 - [git (git Bush)](https://git-scm.com/install/)
 
-###Installation:###
+### Installation:
 
 1. Clone the repository:
   Open git Bash and use those commands:
@@ -42,8 +42,8 @@ This project was created as a test project for **Innowise Frontend Intershi**
 
 ----------------------------------------------------------------
 
-##Project Structure:##
-
+## Project Structure:
+```
 project
 |
 |-- src/                        # Source code
@@ -67,3 +67,4 @@ project
 |-- package.json                # Project dependencies and scripts
 |-- vite.config.js              # Vite configuration (with proxy settings)
 |-- README.md                   # This file
+```

@@ -184,8 +184,12 @@ html {
 .main-heart-container img {
     width: 25px;
     height: 25px;
-    transition: transform 0.3s ease;
-    fill: red;
+    fill: none;
+    stroke: #333;
+    transition: fill 0.4s ease;
+}
+.main-heart-container .main-heart.filled path {
+    fill: #e74c3c; 
 }
 .main-heart-container:hover {
     cursor: pointer;
@@ -197,16 +201,18 @@ html {
     width: 20vw;
     display: flex;
     flex-direction: column;
-    padding: 1vh 1vw;
+    padding: 1vh 0;
     background-color: #fff;
     border-radius: 10px;
     border: 1px solid var(--gray-text);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
  }
 .main__favorites_head_container {
+    padding: 0 1vw 1vh 1vw;
     display: flex;
     align-items: center;
     gap: 1vw;
+    border-bottom: 2px solid #eceaea;
  }
 .main__favorites_head_icon_container {
     display: flex;
@@ -236,7 +242,51 @@ html {
     font-size: 0.8rem;
     color: var(--gray-text);
  }
-.main_favorites_shelf { }
+ .main__favorites_shelf_block {
+    padding: 0.7vh 0;
+    margin: 0 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #eceaea;
+ }
+.main__favorites_shelf_content_container {
+    display: flex;
+    justify-content: start;
+    gap: 0.5vw;
+    align-items: center;
+}
+.main__favorites_shelf_text_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main__favorites_shelf_cover_container {
+    height: 80px;
+    min-width: 48px;
+    width: 48px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.main__favorites_shelf_cover_container img {
+    width: 100%;
+    height: 100%;
+}
+.main__favorites_shelf_heart_container .main-heart.filled path {
+    fill: #e74c3c; 
+}
+.main__favorites_shelf_title_container h4 {
+    font-size: 0.9rem;
+}
+.main__favorites_shelf_author_container p {
+    font-size: 0.7rem;
+    color: var(--gray-text);
+}
+.main__favorites_shelf_year_container p {
+    font-size: 0.7rem;
+    color: var(--gray-text);
+}
+
 .footer {
     padding: 2vh 0;
     display: flex;

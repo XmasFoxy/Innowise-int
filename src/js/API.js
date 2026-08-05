@@ -2,7 +2,7 @@ async function getBooks() {
   const books = [];
 
   try {
-    const response = await fetch('https://openlibrary.org/search.json?q=love&limit=10');
+    const response = await fetch('/api/search.json?q=love&limit=10');
     const booksFromAPI = await response.json();
     for(let value of booksFromAPI.docs) {
       let obj = {};
